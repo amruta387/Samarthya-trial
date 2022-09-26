@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Orbitron|Righteous|Signika|Unna|Volkhov&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+  font-family:'Domine', serif;
+}
+
+/* ######################  Navigation Sidemenu ######################## */
+
+ .wrapper .sidemenu{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  color:white;
+  padding: 30px 0;
+  background-color: black;
+}
+
+/****** Logo *****/
+
+.sidemenu .logo{
+  margin-bottom: 50px;
+  padding: 30px;
+  text-align: center;
+  /*background-color: blueviolet;*/
+}
+
+/******* NAvigation menu List *******/
+
+.sidemenu ul li{
+  padding: 15px;
+ /* border-bottom: 1px solid darkgray;*/
+  
+}
+
+/*.sidemenu ul li:nth-of-type(1){border-top: 1px solid darkgray;}*/
+
+.sidemenu ul li a{
+  color:bisque;
+  display: block;
+}
+
+.sidemenu ul li a .fas{
+  width: 25px;
+  padding-right: 40px;
+}
+
+.sidemenu ul li:hover{
+  background-color: coral;
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+.sidemenu ul li:hover a{
+  color: black;
+  letter-spacing: 1px;
+  animation: scatter 0.8s linear;
+}
+@keyframes scatter{
+  0%{
+     letter-spacing: 1px;
+  }
+  25%{
+    letter-spacing: 2px;
+  }
+  50%{
+    letter-spacing: 3px;
+  }
+  100%{
+    letter-spacing: 1px;
+  }
+}
+.sidemenu .copyright{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  left: 12%;
+  padding: 10px;
+  color:white;
+}
+
+/* ########################### Main Content ######################## */
+
+.wrapper .main_content{
+  padding-left: 250px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ########################## parallex effect ############################ */
+
+.bg_img1, .bg_img2, .bg_img3, .bg_img4, .bg_img5{
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+/* ################### Home Page ################# */
+
+.bg_img1{
+  background-image: url("../img/background/bg_img1.jpg");
+  height: 721px;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide{
+  0%{
+    background-image: url("../img/background/bg_img1.jpg");
+  }
+  33%{
+    background-image: url("../img/background/fade2.jpg");
+  }
+  66%{
+    background-image: url("../img/background/fade3.jpg");
+  }
+}
+
+.ptext{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 50%;
+  height: 70%;
+  border-radius: 0 50% 0 50%;
+  padding-top: 70px;
+  text-align: center;
+  color: bisque;
+}
+
+.ptext h3{
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.ptext .h1_ani1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(241, 94, 41);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.ptext .p_ani2{
+  margin: 30px;
+  padding: 30px 40px;
+  font-family: 'Orbitron', sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.ptext .btn_ani3{
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  font-size: 30px;
+}
+
+
+.bg_img2{
+  background-image: url("../img/background/bg_img2.jpg");
+  min-height: 400px;
+}
+
+.bg_img3{
+  background-image: url("../img/background/bg_img3.jpg");
+  min-height: 400px;
+}
+
+.bg_img4{
+  background-image: url("../img/background/bg_img4.jpg");
+  min-height: 400px;
+}
+
+.bg_img5{
+  background-image: url("../img/background/bg_img5.jpg");
+  min-height: 400px;
+}
+
+/*############## Common to all section ############ */
+
+.section{
+  padding: 3%;
+  height: 724px;
+  color: white;
+}
+
+.section h2{
+  margin-bottom: 10px;
+}
+
+.section .f_letter{
+  color: red;
+  font-size: 30px;
+}
+
+
+/*##################### History page ##############*/
+.section_bg1{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../img/background/staircase-600468_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info_history{
+  height: 100%;
+}
+
+.info_history .part1, .info_history .part2{
+  padding: 40px;
+  width: 50%;
+  height: 600px;
+  letter-spacing: 1px;
+  color: bisque;
+}
+.info_history .part1 .letter_size{
+  font-size: 24px;
+}
+.info_history .part1{
+   float: left;
+}
+
+.info_history .part1 p{
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
+.part1 a{
+  color: blue;
+  font-style: italic;
+
+}
+.part1 a:hover{
+  color: red
+}
+
+.info_history .part2{
+  float: right;
+  text-align: center;
+
+
+}
+.part2 .img_container{
+  margin: 40px 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0,0,0,0.5);
+  background-image: url("../img/history/img1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  animation: animate 15s infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-image: url("../img/history/img1.jpg");
+  }
+  25%{
+    background-image: url("../img/history/img2.jpg");
+  }
+  50%{
+    background-image: url("../img/history/img3.jpg");
+  }
+  75%{
+    background-image: url("../img/history/img4.jpg");
+  }
+  100%{
+    background-image: url("../img/history/img5.jpg");
+  }
+}
+
+/* ################## Interior Design ################ */
+.section_bg2, .section_bg4{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../img/background/bg_interior.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*########################### Portfolio #################*/
+
+.section_bg3{
+   background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("../img/background/bg_port.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: white;
+ }
+
+.row {
+  display: flex;
+}
+
+.column1, .column2, .column3 {
+  flex: 1;
+  padding: 10px;
+  height: 350px; 
+}
+.column1{
+  text-align: center;
+}
+.column1 .port_img{
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px white;
+}
+.column2{
+  font-family: 'Unna', serif;
+  color: bisque;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.column2 h1{
+  font-size: 30px;
+  color: coral;
+}
+.column2 p{
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  margin: 10px 0;
+  text-indent: 50px;
+  word-wrap: break-word;
+}
+.column3{
+  font-family: 'Unna', serif;
+  text-align: center;
+}
+.column3 .count h4{
+  margin: 25px;
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: coral;
+}
+.count .counter{
+  margin: 20px;
+  font-size: 30px;
+  color: bisque;
+  padding: 10px;
+}
+.team {
+  font-family: 'Unna', serif;
+  color: coral;
+  padding: 10px;
+  height:250px;
+  display: flex;
+}
+
+.team .box{
+   width: 25%;
+   margin: 0 5px;
+  padding-top: 10px;
+   text-align: center;
+   
+}
+.team .box .imgbox{
+   position: relative;
+   overflow: hidden;
+}
+.team .box .imgbox img{
+  height: 210px;
+  width: 80%;
+  transition: transform 1s;
+}
+.team .box:hover .imgbox img{
+  transform: scale(1.1);
+}
+.team .box .details{
+  background-color: rgba(0,0,0,.8);
+  height: 150px;
+  width: 210px;
+  position: relative;
+  top: -190px;
+  left: 35px;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  transform: scaleY(0);
+  transition: transform .8s;
+}
+
+.team .box:hover .details{
+  transform: scaleY(1);
+}
+
+/*#################### Projects ###############*/
+ .section_bg4{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../img/background/bg_projects.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all_projects{
+  width: 1150px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  padding: 20px 40px;
+}
+.all_projects .proj1 img{
+  width: 300px;
+  height: 270px;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.all_projects .proj1 img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(151, 150, 150); 
+  border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:bisque; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: coral; 
+}
+
+.proj1 .proj_cap{
+  background-color: rgba(0,0,0,.7);
+  position: relative;
+  bottom: 90px;
+  margin: -25px 20px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  color: bisque;
+}
+
+.proj1 .proj_cap:hover{
+  color: coral;
+}
+
+
+
+/*######################## Contact page ################*/
+
+.section_bg5{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/background/bg_contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.address{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  float: left;
+  width: 450px;
+  height: 600px;
+  margin-left: 50px;
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+}
+
+.address h3{
+  color: coral;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  margin: 20px 0;
+}
+
+.address p{
+  color: bisque;
+   font-style: italic;
+   margin-bottom: 20px;
+}
+
+.address p a{
+  color: red;
+}
+.address p a:hover{
+  color: blue;
+}
+
+.address button, .address iframe{
+  border-radius: 8px;
+
+}
+.address button:hover{
+  border: 2px solid red;
+  border-radius: 8px;
+
+}
+
+.form_wrapper {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  float: right;
+  width: 500px;
+  height: 600px;
+  padding: 40px;
+  margin-right: 150px;
+  border-radius: 10px;
+  color: bisque;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+input[type=submit] {
+  background-color:rgba(85, 57, 16, 0.938);
+  color: bisque;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: brown;
+}
+
+
+/*###################### Social Media Icons ##################*/
+
+.social_icons{
+  position: fixed;
+  bottom: 5%;
+  right: 5px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social_icons a{
+  text-transform: uppercase;
+  margin: 1px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 30%;
+ }
+
+.social_icons a i{
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30%;
+  transition: all 0.6s
+}
+.social_icons a i:hover{
+  transform: rotate(360deg);
+}
+
+.social_icons a i.fa-facebook-f{
+  color: #3B5998;
+}
+
+.social_icons a i.fa-youtube{
+  color: #bb0000;
+}
+.social_icons a i.fa-twitter{
+  color: #55ACEE;
+}
+.social_icons a i.fa-instagram{
+  color: #125688;
+}
+.facebook{
+  background: #3B5998;
+  color: white;
+}
+.youtube{
+  background: #bb0000;
+  color: white;
+}
+.twitter{
+  background: #55ACEE;
+  color: white;
+}
+.insta{
+  background: #125688;
+  color: white;
+}
+
+
+/* ###################### Media Queries ############ */
+
+@media(max-width:500px){
+  .bg_img1, .bg_img2,.bg_img3{
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+
+
+
+
+
+
